@@ -1,0 +1,7 @@
+venv
+__pycache__
+*.onnx
+*.params
+*.json
+*.h5
+*_tfjs

@@ -5,8 +5,7 @@ clean:
 	rm -rf *.h5 *.json *.params *.onnx *_tfjs __pycache__ *.pytorch
 setup: clean
 	virtualenv venv
-	source venv/bin/activate
-	pip install -f requirements.txt
+	source venv/bin/activate && pip install -r requirements.txt
 onnx: 
 	python3 export_gluon_to_onnx.py
 keras: 
